@@ -6,7 +6,9 @@ import OverloadForm from "../components/OverloadForm"
 import {Link} from 'gatsby'
 
 const Overload = ({location}) => {
-    const sentence = location.state.value
+    const sentence = location.state? location.state.value: ""
+    
+
     return (
         <Layout showCta={false}>
             <VStack spacing="4" p="0 1rem">
